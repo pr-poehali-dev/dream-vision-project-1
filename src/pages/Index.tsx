@@ -9,7 +9,7 @@ export default function Index() {
 
   return (
     <div className="min-h-screen relative overflow-hidden">
-      <div className="absolute inset-0 bg-black">
+      <div className="absolute inset-0 bg-[#F5F0E8]">
         {/* Flowing wave rays overlay */}
         <div className="absolute inset-0">
           <svg
@@ -21,29 +21,29 @@ export default function Index() {
           >
             <defs>
               <radialGradient id="neonPulse1" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stopColor="rgba(255,255,255,1)" />
-                <stop offset="30%" stopColor="rgba(251,146,60,1)" />
-                <stop offset="70%" stopColor="rgba(249,115,22,0.8)" />
-                <stop offset="100%" stopColor="rgba(249,115,22,0)" />
+                <stop offset="0%" stopColor="rgba(139,90,60,1)" />
+                <stop offset="30%" stopColor="rgba(139,90,60,0.8)" />
+                <stop offset="70%" stopColor="rgba(101,67,45,0.5)" />
+                <stop offset="100%" stopColor="rgba(101,67,45,0)" />
               </radialGradient>
               <radialGradient id="neonPulse2" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stopColor="rgba(255,255,255,0.9)" />
-                <stop offset="25%" stopColor="rgba(251,146,60,0.9)" />
-                <stop offset="60%" stopColor="rgba(234,88,12,0.7)" />
-                <stop offset="100%" stopColor="rgba(234,88,12,0)" />
+                <stop offset="0%" stopColor="rgba(160,110,75,0.9)" />
+                <stop offset="25%" stopColor="rgba(139,90,60,0.7)" />
+                <stop offset="60%" stopColor="rgba(101,67,45,0.4)" />
+                <stop offset="100%" stopColor="rgba(101,67,45,0)" />
               </radialGradient>
               <radialGradient id="neonPulse3" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stopColor="rgba(255,255,255,1)" />
-                <stop offset="35%" stopColor="rgba(251,146,60,1)" />
-                <stop offset="75%" stopColor="rgba(234,88,12,0.6)" />
-                <stop offset="100%" stopColor="rgba(234,88,12,0)" />
+                <stop offset="0%" stopColor="rgba(120,75,45,1)" />
+                <stop offset="35%" stopColor="rgba(139,90,60,0.7)" />
+                <stop offset="75%" stopColor="rgba(101,67,45,0.3)" />
+                <stop offset="100%" stopColor="rgba(101,67,45,0)" />
               </radialGradient>
               {/* Adding hero text background gradients and filters */}
               <radialGradient id="heroTextBg" cx="30%" cy="50%" r="70%">
-                <stop offset="0%" stopColor="rgba(249,115,22,0.15)" />
-                <stop offset="40%" stopColor="rgba(251,146,60,0.08)" />
-                <stop offset="80%" stopColor="rgba(234,88,12,0.05)" />
-                <stop offset="100%" stopColor="rgba(0,0,0,0)" />
+                <stop offset="0%" stopColor="rgba(139,90,60,0.10)" />
+                <stop offset="40%" stopColor="rgba(139,90,60,0.05)" />
+                <stop offset="80%" stopColor="rgba(101,67,45,0.03)" />
+                <stop offset="100%" stopColor="rgba(245,240,232,0)" />
               </radialGradient>
               <filter id="heroTextBlur" x="-50%" y="-50%" width="200%" height="200%">
                 <feGaussianBlur stdDeviation="12" result="blur" />
@@ -58,40 +58,40 @@ export default function Index() {
                 </feMerge>
               </filter>
               <linearGradient id="backgroundFade1" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="rgba(0,0,0,0)" />
-                <stop offset="20%" stopColor="rgba(249,115,22,0.15)" />
-                <stop offset="80%" stopColor="rgba(249,115,22,0.15)" />
-                <stop offset="100%" stopColor="rgba(0,0,0,0)" />
+                <stop offset="0%" stopColor="rgba(245,240,232,0)" />
+                <stop offset="20%" stopColor="rgba(139,90,60,0.08)" />
+                <stop offset="80%" stopColor="rgba(139,90,60,0.08)" />
+                <stop offset="100%" stopColor="rgba(245,240,232,0)" />
               </linearGradient>
               <linearGradient id="backgroundFade2" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="rgba(0,0,0,0)" />
-                <stop offset="15%" stopColor="rgba(251,146,60,0.12)" />
-                <stop offset="85%" stopColor="rgba(251,146,60,0.12)" />
-                <stop offset="100%" stopColor="rgba(0,0,0,0)" />
+                <stop offset="0%" stopColor="rgba(245,240,232,0)" />
+                <stop offset="15%" stopColor="rgba(160,110,75,0.06)" />
+                <stop offset="85%" stopColor="rgba(160,110,75,0.06)" />
+                <stop offset="100%" stopColor="rgba(245,240,232,0)" />
               </linearGradient>
               <linearGradient id="backgroundFade3" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="rgba(0,0,0,0)" />
-                <stop offset="25%" stopColor="rgba(234,88,12,0.18)" />
-                <stop offset="75%" stopColor="rgba(234,88,12,0.18)" />
-                <stop offset="100%" stopColor="rgba(0,0,0,0)" />
+                <stop offset="0%" stopColor="rgba(245,240,232,0)" />
+                <stop offset="25%" stopColor="rgba(101,67,45,0.10)" />
+                <stop offset="75%" stopColor="rgba(101,67,45,0.10)" />
+                <stop offset="100%" stopColor="rgba(245,240,232,0)" />
               </linearGradient>
               <linearGradient id="threadFade1" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="rgba(0,0,0,1)" />
-                <stop offset="15%" stopColor="rgba(249,115,22,0.8)" />
-                <stop offset="85%" stopColor="rgba(249,115,22,0.8)" />
-                <stop offset="100%" stopColor="rgba(0,0,0,1)" />
+                <stop offset="0%" stopColor="rgba(245,240,232,1)" />
+                <stop offset="15%" stopColor="rgba(139,90,60,0.5)" />
+                <stop offset="85%" stopColor="rgba(139,90,60,0.5)" />
+                <stop offset="100%" stopColor="rgba(245,240,232,1)" />
               </linearGradient>
               <linearGradient id="threadFade2" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="rgba(0,0,0,1)" />
-                <stop offset="12%" stopColor="rgba(251,146,60,0.7)" />
-                <stop offset="88%" stopColor="rgba(251,146,60,0.7)" />
-                <stop offset="100%" stopColor="rgba(0,0,0,1)" />
+                <stop offset="0%" stopColor="rgba(245,240,232,1)" />
+                <stop offset="12%" stopColor="rgba(160,110,75,0.4)" />
+                <stop offset="88%" stopColor="rgba(160,110,75,0.4)" />
+                <stop offset="100%" stopColor="rgba(245,240,232,1)" />
               </linearGradient>
               <linearGradient id="threadFade3" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="rgba(0,0,0,1)" />
-                <stop offset="18%" stopColor="rgba(234,88,12,0.8)" />
-                <stop offset="82%" stopColor="rgba(234,88,12,0.8)" />
-                <stop offset="100%" stopColor="rgba(0,0,0,1)" />
+                <stop offset="0%" stopColor="rgba(245,240,232,1)" />
+                <stop offset="18%" stopColor="rgba(101,67,45,0.45)" />
+                <stop offset="82%" stopColor="rgba(101,67,45,0.45)" />
+                <stop offset="100%" stopColor="rgba(245,240,232,1)" />
               </linearGradient>
               <filter id="backgroundBlur" x="-50%" y="-50%" width="200%" height="200%">
                 <feGaussianBlur stdDeviation="8" result="blur" />
@@ -691,50 +691,50 @@ export default function Index() {
       {/* Header Navigation */}
       <header className="relative z-10 flex items-center justify-between px-4 sm:px-6 py-4 lg:px-12">
         <div className="flex items-center space-x-2 pl-3 sm:pl-6 lg:pl-12">
-          <span className="text-white font-bold text-lg sm:text-xl lg:text-2xl">Studio Vera</span>
+          <span className="text-[#5C3D2E] font-bold text-lg sm:text-xl lg:text-2xl tracking-wide">Studio Vera</span>
         </div>
 
         <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
-          <a href="#" className="text-white/80 hover:text-white transition-colors text-sm lg:text-base">
+          <a href="#" className="text-[#8B5A3C]/80 hover:text-[#5C3D2E] transition-colors text-sm lg:text-base">
             Работы
           </a>
-          <a href="#" className="text-white/80 hover:text-white transition-colors text-sm lg:text-base">
+          <a href="#" className="text-[#8B5A3C]/80 hover:text-[#5C3D2E] transition-colors text-sm lg:text-base">
             Услуги
           </a>
-          <a href="#" className="text-white/80 hover:text-white transition-colors text-sm lg:text-base">
+          <a href="#" className="text-[#8B5A3C]/80 hover:text-[#5C3D2E] transition-colors text-sm lg:text-base">
             Обо мне
           </a>
-          <a href="#" className="text-white/80 hover:text-white transition-colors text-sm lg:text-base">
+          <a href="#" className="text-[#8B5A3C]/80 hover:text-[#5C3D2E] transition-colors text-sm lg:text-base">
             Контакты
           </a>
         </nav>
 
         {/* Mobile menu button */}
-        <button className="md:hidden text-white p-2" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+        <button className="md:hidden text-[#5C3D2E] p-2" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
           <Menu className="w-6 h-6" />
         </button>
 
-        <ShimmerButton className="hidden md:flex bg-orange-500 hover:bg-orange-600 text-white px-4 lg:px-6 py-2 rounded-xl text-sm lg:text-base font-medium shadow-lg">
+        <ShimmerButton className="hidden md:flex px-4 lg:px-6 py-2 rounded-xl text-sm lg:text-base font-medium shadow-sm" background="rgba(92,61,46,1)" shimmerColor="rgba(245,240,232,0.6)">
           Обсудить проект
         </ShimmerButton>
       </header>
 
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-16 left-0 right-0 bg-black/95 backdrop-blur-sm border-b border-white/10 z-20">
+        <div className="md:hidden absolute top-16 left-0 right-0 bg-[#F5F0E8]/95 backdrop-blur-sm border-b border-[#8B5A3C]/20 z-20">
           <nav className="flex flex-col space-y-4 px-6 py-6">
-            <a href="#" className="text-white/80 hover:text-white transition-colors">
+            <a href="#" className="text-[#8B5A3C]/80 hover:text-[#5C3D2E] transition-colors">
               Работы
             </a>
-            <a href="#" className="text-white/80 hover:text-white transition-colors">
+            <a href="#" className="text-[#8B5A3C]/80 hover:text-[#5C3D2E] transition-colors">
               Услуги
             </a>
-            <a href="#" className="text-white/80 hover:text-white transition-colors">
+            <a href="#" className="text-[#8B5A3C]/80 hover:text-[#5C3D2E] transition-colors">
               Обо мне
             </a>
-            <a href="#" className="text-white/80 hover:text-white transition-colors">
+            <a href="#" className="text-[#8B5A3C]/80 hover:text-[#5C3D2E] transition-colors">
               Контакты
             </a>
-            <ShimmerButton className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2.5 rounded-xl text-sm font-medium shadow-lg w-fit">
+            <ShimmerButton className="px-6 py-2.5 rounded-xl text-sm font-medium shadow-sm w-fit" background="rgba(92,61,46,1)" shimmerColor="rgba(245,240,232,0.6)">
               Обсудить проект
             </ShimmerButton>
           </nav>
@@ -745,31 +745,31 @@ export default function Index() {
       <main className="relative z-10 flex flex-col items-start justify-start sm:justify-center min-h-[calc(100vh-80px)] px-4 sm:px-6 lg:px-12 max-w-6xl pt-4 sm:-mt-12 lg:-mt-24 pl-6 sm:pl-12 lg:pl-20">
         {/* Trial Badge */}
         <div className="mb-4 sm:mb-8">
-          <div className="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-3 sm:px-4 py-2">
-            <span className="text-white text-xs md:text-xs">Дизайнер бренда и графики</span>
+          <div className="inline-flex items-center bg-[#8B5A3C]/10 backdrop-blur-sm border border-[#8B5A3C]/25 rounded-full px-3 sm:px-4 py-2">
+            <span className="text-[#8B5A3C] text-xs md:text-xs tracking-widest uppercase">Дизайнер бренда и графики</span>
           </div>
         </div>
 
-        <h1 className="text-white text-4xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-8xl font-bold leading-tight mb-4 sm:mb-6 text-balance">
+        <h1 className="text-[#3D2314] text-4xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-8xl font-bold leading-tight mb-4 sm:mb-6 text-balance">
           Дизайн, который
           <br />
           работает на{" "}
-          <LineShadowText className="italic font-light" shadowColor="white">
+          <LineShadowText className="italic font-light" shadowColor="#8B5A3C">
             бренд
           </LineShadowText>
         </h1>
 
-        <p className="text-white/70 text-sm sm:text-base md:text-sm lg:text-2xl mb-6 sm:mb-8 max-w-2xl text-pretty">
+        <p className="text-[#8B5A3C]/80 text-sm sm:text-base md:text-sm lg:text-2xl mb-6 sm:mb-8 max-w-2xl text-pretty">
           Веб-дизайн, брендбуки, логотипы, визитки,
           <br className="hidden sm:block" />
           <span className="sm:hidden"> </span>
           приглашения и инфографика — под вашу задачу.
         </p>
 
-        <Button className="group relative bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg text-sm sm:text-base md:text-xs lg:text-lg font-semibold flex items-center gap-2 backdrop-blur-sm border border-orange-400/30 shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/40 transition-all duration-300 hover:scale-105 hover:-translate-y-0.5">
+        <Button className="group relative bg-[#5C3D2E] hover:bg-[#3D2314] text-[#F5F0E8] px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg text-sm sm:text-base md:text-xs lg:text-lg font-semibold flex items-center gap-2 border border-[#8B5A3C]/30 shadow-md shadow-[#8B5A3C]/20 hover:shadow-lg hover:shadow-[#5C3D2E]/30 transition-all duration-300 hover:scale-105 hover:-translate-y-0.5">
           Смотреть работы
           <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 group-hover:-rotate-12 transition-transform duration-300" />
-          <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-white/0 via-white/10 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-white/0 via-white/5 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         </Button>
       </main>
     </div>
