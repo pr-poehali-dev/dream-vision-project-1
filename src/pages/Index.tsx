@@ -853,6 +853,92 @@ export default function Index() {
 
         </div>
       </section>
+
+      {/* About Section */}
+      <section id="about" className="relative z-10 bg-[#EDE6D9] px-6 sm:px-12 lg:px-20 py-20 sm:py-28">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+          {/* Photo */}
+          <div className="relative">
+            <div className="overflow-hidden rounded-3xl aspect-[3/4] max-w-sm mx-auto lg:mx-0">
+              <img
+                src="https://cdn.poehali.dev/projects/6ccfdc25-f450-4d14-aa28-29566cd72c27/files/01405a82-4baf-40c5-9d82-8a13003b0617.jpg"
+                alt="Дизайнер"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="absolute -bottom-4 -right-4 lg:right-auto lg:-left-4 bg-[#5C3D2E] text-[#F5F0E8] rounded-2xl px-5 py-4 shadow-lg max-w-[160px]">
+              <div className="text-2xl font-bold">5+</div>
+              <div className="text-xs text-[#F5F0E8]/80 mt-0.5">лет в дизайне</div>
+            </div>
+          </div>
+
+          {/* Text */}
+          <div>
+            <span className="text-[#8B5A3C] text-xs tracking-widest uppercase mb-3 block">Обо мне</span>
+            <h2 className="text-[#3D2314] text-3xl sm:text-4xl font-bold mb-6 leading-snug">
+              Создаю дизайн,<br />который запоминают
+            </h2>
+            <p className="text-[#8B5A3C]/80 text-base sm:text-lg leading-relaxed mb-6">
+              Меня зовут Вера. Я дизайнер с опытом в веб-дизайне, брендинге и полиграфии. Помогаю бизнесу и творческим проектам выглядеть профессионально и узнаваемо — от логотипа до готового сайта.
+            </p>
+            <p className="text-[#8B5A3C]/80 text-base sm:text-lg leading-relaxed mb-10">
+              В работе ценю чистоту, смысл и внимание к деталям. Каждый проект — это отдельная история, которую мы рассказываем вместе с клиентом.
+            </p>
+
+            {/* Stats */}
+            <div className="flex gap-8 mb-10">
+              <div>
+                <div className="text-[#3D2314] text-2xl font-bold">80+</div>
+                <div className="text-[#8B5A3C]/70 text-sm mt-0.5">проектов</div>
+              </div>
+              <div className="w-px bg-[#8B5A3C]/20" />
+              <div>
+                <div className="text-[#3D2314] text-2xl font-bold">40+</div>
+                <div className="text-[#8B5A3C]/70 text-sm mt-0.5">клиентов</div>
+              </div>
+              <div className="w-px bg-[#8B5A3C]/20" />
+              <div>
+                <div className="text-[#3D2314] text-2xl font-bold">6</div>
+                <div className="text-[#8B5A3C]/70 text-sm mt-0.5">направлений</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contacts" className="relative z-10 bg-[#F5F0E8] px-6 sm:px-12 lg:px-20 py-20 sm:py-28">
+        <div className="max-w-2xl mx-auto text-center mb-12">
+          <span className="text-[#8B5A3C] text-xs tracking-widest uppercase mb-3 block">Контакты</span>
+          <h2 className="text-[#3D2314] text-3xl sm:text-4xl font-bold mb-4">Обсудим ваш проект?</h2>
+          <p className="text-[#8B5A3C]/80 text-base sm:text-lg">Расскажите о задаче — отвечу в течение дня.</p>
+        </div>
+
+        <form className="max-w-xl mx-auto flex flex-col gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <input
+              type="text"
+              placeholder="Ваше имя"
+              className="w-full bg-[#EDE6D9] border border-[#8B5A3C]/20 rounded-xl px-4 py-3 text-[#3D2314] placeholder-[#8B5A3C]/50 focus:outline-none focus:border-[#5C3D2E] transition-colors text-sm"
+            />
+            <input
+              type="tel"
+              placeholder="Телефон или email"
+              className="w-full bg-[#EDE6D9] border border-[#8B5A3C]/20 rounded-xl px-4 py-3 text-[#3D2314] placeholder-[#8B5A3C]/50 focus:outline-none focus:border-[#5C3D2E] transition-colors text-sm"
+            />
+          </div>
+          <textarea
+            placeholder="Расскажите о вашей задаче..."
+            rows={4}
+            className="w-full bg-[#EDE6D9] border border-[#8B5A3C]/20 rounded-xl px-4 py-3 text-[#3D2314] placeholder-[#8B5A3C]/50 focus:outline-none focus:border-[#5C3D2E] transition-colors text-sm resize-none"
+          />
+          <Button className="w-full bg-[#5C3D2E] hover:bg-[#3D2314] text-[#F5F0E8] py-3 rounded-xl text-base font-semibold transition-all duration-300 hover:scale-[1.02]">
+            Отправить заявку
+          </Button>
+        </form>
+      </section>
     </div>
   )
 }
