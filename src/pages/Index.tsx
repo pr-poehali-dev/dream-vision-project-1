@@ -772,6 +772,87 @@ export default function Index() {
           <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-white/0 via-white/5 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         </Button>
       </main>
+
+      {/* Gallery Section */}
+      <section id="works" className="relative z-10 bg-[#F5F0E8] px-6 sm:px-12 lg:px-20 py-20 sm:py-28">
+        <div className="max-w-6xl mx-auto">
+
+          {/* Section header */}
+          <div className="mb-12 sm:mb-16">
+            <span className="text-[#8B5A3C] text-xs tracking-widest uppercase mb-3 block">Портфолио</span>
+            <h2 className="text-[#3D2314] text-3xl sm:text-4xl lg:text-5xl font-bold">Избранные работы</h2>
+          </div>
+
+          {/* Categories filter */}
+          <div className="flex flex-wrap gap-2 sm:gap-3 mb-10 sm:mb-14">
+            {["Все работы", "Веб-дизайн", "Брендинг", "Полиграфия"].map((cat, i) => (
+              <button
+                key={cat}
+                className={`px-4 py-1.5 rounded-full text-sm transition-all duration-200 border ${
+                  i === 0
+                    ? "bg-[#5C3D2E] text-[#F5F0E8] border-[#5C3D2E]"
+                    : "bg-transparent text-[#8B5A3C] border-[#8B5A3C]/30 hover:border-[#5C3D2E] hover:text-[#5C3D2E]"
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+
+          {/* Cards grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+
+            {/* Card 1 — Web */}
+            <div className="group cursor-pointer">
+              <div className="overflow-hidden rounded-2xl mb-4 aspect-[4/3]">
+                <img
+                  src="https://cdn.poehali.dev/projects/6ccfdc25-f450-4d14-aa28-29566cd72c27/files/33e7c21e-fa0f-43c1-8a5b-ef4b519acec5.jpg"
+                  alt="Веб-дизайн"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <span className="text-[#8B5A3C] text-xs tracking-widest uppercase">Веб-дизайн</span>
+              <h3 className="text-[#3D2314] text-lg font-semibold mt-1">Лендинг для студии</h3>
+            </div>
+
+            {/* Card 2 — Brand */}
+            <div className="group cursor-pointer">
+              <div className="overflow-hidden rounded-2xl mb-4 aspect-[4/3]">
+                <img
+                  src="https://cdn.poehali.dev/projects/6ccfdc25-f450-4d14-aa28-29566cd72c27/files/54b92a73-03fe-4afb-b336-30911b410b49.jpg"
+                  alt="Брендинг"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <span className="text-[#8B5A3C] text-xs tracking-widest uppercase">Брендинг</span>
+              <h3 className="text-[#3D2314] text-lg font-semibold mt-1">Фирменный стиль и визитки</h3>
+            </div>
+
+            {/* Card 3 — Print */}
+            <div className="group cursor-pointer">
+              <div className="overflow-hidden rounded-2xl mb-4 aspect-[4/3]">
+                <img
+                  src="https://cdn.poehali.dev/projects/6ccfdc25-f450-4d14-aa28-29566cd72c27/files/65cb686b-027b-4baa-b81b-cd5451d6ccb2.jpg"
+                  alt="Полиграфия"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <span className="text-[#8B5A3C] text-xs tracking-widest uppercase">Полиграфия</span>
+              <h3 className="text-[#3D2314] text-lg font-semibold mt-1">Свадебные приглашения</h3>
+            </div>
+
+          </div>
+
+          {/* CTA */}
+          <div className="mt-14 sm:mt-20 flex justify-center">
+            <Button className="group relative bg-transparent hover:bg-[#5C3D2E] text-[#5C3D2E] hover:text-[#F5F0E8] px-8 py-3 rounded-lg text-base font-semibold border border-[#5C3D2E] flex items-center gap-2 transition-all duration-300">
+              Смотреть все проекты
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+            </Button>
+          </div>
+
+        </div>
+      </section>
     </div>
   )
 }
